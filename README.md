@@ -93,13 +93,11 @@ E as matrizes sem −1 são conferidas contra `n!` de 1 a 9.
 
 ## O que as medidas me corrigiram
 
-**Achei que matriz de permutação fosse a regra, e −1 a exceção.** Em n=7 elas são 2,3%, e a moda da distribuição é 3 entradas −1. A exceção é ter zero.
+Nada quebrou neste projeto: transferência, fórmula fechada, 2-enumeração e força bruta concordaram de primeira, e não vou inventar um erro para preencher a seção.
 
-**Esperava que o extremo fosse único sempre.** Em ordem par são **duas** matrizes no máximo, não uma — e a coluna alterna 1, 2, 1, 2 em todas as dez linhas de 3 a 12. Fui olhar a de n=4 achando que era bug de contagem; são as duas metades espelhadas do losango, que no par não fecha no centro.
+**As porcentagens são truncadas, e o README diz isso.** Calculadas em `BigInt`, elas saem truncadas na quarta casa: 85,7142 em n=3, onde o arredondado seria 85,7143. A tabela usa o valor que o medidor imprime e avisa que é truncado, em vez de misturar os dois.
 
-**Quase confiei no total.** A primeira conferência era só contra a fórmula fechada, que olha o total. A transferência carrega o número de −1 em cada estado, e um erro nessa conta passaria intacto. A 2-enumeração entrou para conferir a distribuição, e entrou com controle negativo, porque juiz que nunca reprova não está medindo nada.
-
-**Tentei a força bruta em n=5.** São 3²⁵, mais de 847 bilhões de matrizes. A função se recusa acima de 50 milhões e devolve quanto precisaria, em vez de travar a suíte.
+O que me surpreendeu, sem ter sido erro: o extremo ser **duas** matrizes em ordem par, e a moda do número de −1 em n=7 ser 3 e não zero.
 
 ---
 
