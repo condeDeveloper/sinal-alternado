@@ -1,0 +1,15 @@
+{
+  "name": "sinal-alternado",
+  "version": "1.0.0",
+  "description": "Matrizes de sinal alternado contadas por transferencia e enumeradas uma a uma, com a formula fechada e a 2-enumeracao como juizes, em Node puro",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "node --test testes/*.test.js",
+    "medir": "node ferramentas/medidor.js"
+  },
+  "license": "MIT",
+  "private": false
+}
